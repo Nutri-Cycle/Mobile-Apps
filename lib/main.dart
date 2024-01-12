@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nutricycle_mobileapps/ui/detailFood/detail_food.dart';
 import 'package:nutricycle_mobileapps/utils/theme_color.dart';
 
 void main() {
@@ -10,14 +11,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        body: ElevatedButton(
-          onPressed: () {},
-          child: Text("Hello"),
-          style: ElevatedButton.styleFrom(primary: Color(btnColor)),
-        ),
-      ),
+    return const MaterialApp(
+      home: DetailFood(),
     );
   }
 }
