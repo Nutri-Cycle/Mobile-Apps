@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 
 Color btnColor = Color(0xff65B741);
 Color textSecondary = Color(0xffB1BBC7);
+
 Color colorText = Color(0xff201600);
 Color colorABAB = Color(0xffABABAB);
 Color color332 = Color(0xff332C39);
@@ -40,3 +41,5 @@ TextStyle text10SemiABAB =
 
 TextStyle text14Medium393 =
     TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: color393);
+
+
