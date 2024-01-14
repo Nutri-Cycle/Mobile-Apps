@@ -15,6 +15,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.0"
+  bottom_sheet_bar:
+    dependency: "direct main"
+    description:
+      name: bottom_sheet_bar
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.3.9"
   characters:
     dependency: transitive
     description:
@@ -135,6 +142,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.1.4"
+  measure_size:
+    dependency: transitive
+    description:
+      name: measure_size
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "4.0.0"
   meta:
     dependency: transitive
     description:
@@ -259,6 +273,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.99"
+  sliding_up_panel:
+    dependency: "direct main"
+    description:
+      name: sliding_up_panel
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.0+1"
   source_span:
     dependency: transitive
     description:
