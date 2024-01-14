@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nutricycle_mobileapps/ui/detailFood/detail_food.dart';
-import 'package:nutricycle_mobileapps/utils/theme_color.dart';
+import 'package:nutricycle_mobileapps/ui/introduction_screen/views/introduction.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +13,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(fontFamily: 'Poppins'),
-      home: DetailFood(),
+      debugShowCheckedModeBanner: false,
+      // theme: ThemeData(fontFamily: 'Poppins'),
+      home: const DetailFood(),
     );
   }
 }
