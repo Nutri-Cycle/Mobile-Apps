@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nutricycle_mobileapps/utils/theme_color.dart';
-
-import '../../../utils/size_font.dart';
 
 class IntroductionScreen extends StatefulWidget {
   const IntroductionScreen({Key? key}) : super(key: key);
@@ -15,81 +12,61 @@ class IntroductionScreen extends StatefulWidget {
 class _IntroductionScreenState extends State<IntroductionScreen> {
   @override
   Widget build(BuildContext context) {
-    AllSize allSize = AllSize(context);
+    ScreenUtil.init(context, designSize: Size(393, 852));
     return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Image.asset(
-            'assets/images/logo.png',
-            height: allSize.size.height * 0.070,
-          ),
-          SizedBox(height: allSize.size.height * 0.025),
-          Image.asset(
-            'assets/images/kids.png',
-            height: allSize.size.height * 0.400,
-          ),
-          SizedBox(height: allSize.size.height * 0.025),
-          Text(
-            'Nurturing the body, Nurturing Hope',
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: AllSize.fontSemiBig,
-              fontWeight: FontWeight.bold,
+      body: Padding(
+        padding: const EdgeInsets.all(18.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              'assets/images/logo.png',
+              height: 70.h,
             ),
-          ),
-          SizedBox(height: allSize.size.height * 0.025),
-          Text(
-            'Give hope to all Indonesian children towards a smart and strong country',
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              color: textSecondary,
-              fontWeight: FontWeight.bold,
-              fontSize: AllSize.fontRegular,
+            Image.asset(
+              'assets/images/kids.png',
+              height: 400.h,
             ),
-          ),
-          SizedBox(height: allSize.size.height * 0.025),
-          ElevatedButton(
-            onPressed: () {},
-            style: ElevatedButton.styleFrom(
-                padding:
-                    EdgeInsets.symmetric(horizontal: 165.0, vertical: 22.0),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(50.0), // Circular radius
-                ),
-                primary: btnColor,
-                textStyle: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: AllSize.fontRegular)),
-            child: Text('Start'),
-          ),
-          SizedBox(height: allSize.size.height * 0.025),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                'Have a account?',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: textSecondary,
-                  fontSize: AllSize.fontSemiSmall,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              SizedBox(width: allSize.size.width * 0.015),
-              GestureDetector(
-                child: Text(
-                  'Login',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: AllSize.fontSemiSmall,
-                    fontWeight: FontWeight.bold,
+            Text(
+              'Nurturing the body, Nurturing Hope',
+              textAlign: TextAlign.center,
+              style: text28Bold,
+            ),
+            SizedBox(height: 25.h),
+            Text(
+              'Give hope to all Indonesian children towards a smart and strong country',
+              textAlign: TextAlign.center,
+              style: text14Semibold,
+            ),
+            SizedBox(height: 25.h),
+            ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                  padding:
+                      EdgeInsets.symmetric(horizontal: 150.w, vertical: 21.h),
+                  shape: RoundedRectangleBorder(
+                    borderRadius:
+                        BorderRadius.circular(50.0), // Circular radius
                   ),
-                ),
-              )
-            ],
-          ),
-        ],
+                  primary: btnColor,
+                  textStyle: text18Semi393),
+              child: Text('Start'),
+            ),
+            SizedBox(height: 25.h),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text('Have a account?',
+                    textAlign: TextAlign.center, style: text14Semibold),
+                SizedBox(width: 8.w),
+                GestureDetector(
+                  child: Text('Login',
+                      textAlign: TextAlign.center, style: text18Semi393),
+                )
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
