@@ -15,6 +15,7 @@ TextStyle text12Regular =
 TextStyle text16Medium =
     TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: colorText);
 
+
 TextStyle text28Bold =
     TextStyle(fontSize: 28, fontWeight: FontWeight.bold, color: colorText);
 
@@ -44,3 +45,4 @@ TextStyle text10SemiABAB =
 
 TextStyle text14Medium393 =
     TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: color393);
+
