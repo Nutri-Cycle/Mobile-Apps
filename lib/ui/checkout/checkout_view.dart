@@ -200,25 +200,154 @@ class _CheckoutViewState extends State<CheckoutView> {
         child: ListTile(
             contentPadding: const EdgeInsets.symmetric(horizontal: 0),
             title: Text("Delivery Method", style: text20Medium393),
-            trailing: RichText(
-              textAlign: TextAlign.center,
-              text: TextSpan(
-                children: [
-                  TextSpan(
-                    text: "Gosend ",
-                    style: text20Medium222,
-                  ),
-                  const WidgetSpan(
-                    alignment: ui.PlaceholderAlignment.middle,
-                    child: Icon(
-                      Icons.chevron_right,
-                      size: 26,
-                      color: Colors.black,
+            trailing: GestureDetector(
+              onTap: () {
+                _showModalDeliveryMethod();
+              },
+              child: RichText(
+                textAlign: TextAlign.center,
+                text: TextSpan(
+                  children: [
+                    TextSpan(
+                      text: "Gosend ",
+                      style: text20Medium222,
                     ),
-                  ),
-                ],
+                    const WidgetSpan(
+                      alignment: ui.PlaceholderAlignment.middle,
+                      child: Icon(
+                        Icons.chevron_right,
+                        size: 26,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ],
+                ),
               ),
             )),
+      ),
+    );
+  }
+
+  void _showModalDeliveryMethod() {
+    showModalBottomSheet(
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(top: Radius.circular(20.0)),
+        ),
+        context: context,
+        builder: (context) {
+          return Column(
+            children: [
+              const SizedBox(
+                height: 10,
+              ),
+              Text(
+                "Metode Pengiriman",
+                style: text22Semi393,
+              ),
+              const SizedBox(
+                height: 30,
+              ),
+              _layananPengiriman(
+                  "nutrisend", "Nutri Send", "8 km", "Rp 70.000"),
+              _layananPengiriman("gosend", "Gosend", "8 km", "Rp 60.000"),
+              _layananPengiriman("maxim", "Maxim", "8 km", "Rp 50.000"),
+            ],
+          );
+        });
+  }
+
+  void _showModalPaymentMethod() {
+    showModalBottomSheet(
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(top: Radius.circular(20.0)),
+        ),
+        context: context,
+        builder: (context) {
+          return Column(
+            children: [
+              const SizedBox(
+                height: 10,
+              ),
+              Text(
+                "Metode Pembayaran",
+                style: text22Semi393,
+              ),
+              const SizedBox(
+                height: 30,
+              ),
+              _metodePembayaran("mandiriva", "Mandiri Virtual Account"),
+              _metodePembayaran("bcava", "BCA Virtual Account"),
+              _metodePembayaran("bniva", "BNI Virtual Account"),
+            ],
+          );
+        });
+  }
+
+  Widget _metodePembayaran(String icon, String nama) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10),
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(
+            color: colorABAB, //                   <--- border color
+          ),
+        ),
+        child: ListTile(
+          leading: Container(
+            height: 20,
+            width: 60,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                fit: BoxFit.cover,
+                image: AssetImage('assets/icons/$icon.png'),
+              ),
+            ),
+          ),
+          title: Text(
+            nama,
+            style: text16Medium,
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _layananPengiriman(
+      String icon, String nama, String jarak, String harga) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10),
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(
+            color: colorABAB, //                   <--- border color
+          ),
+        ),
+        child: ListTile(
+          leading: Container(
+            height: 40,
+            width: 40,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                fit: BoxFit.cover,
+                image: AssetImage('assets/icons/$icon.png'),
+              ),
+            ),
+          ),
+          title: Text(
+            nama,
+            style: text20Medium3332,
+          ),
+          subtitle: Text(
+            jarak,
+            style: text14SemiBABA,
+          ),
+          trailing: Text(
+            harga,
+            style: text16Semi332,
+          ),
+        ),
       ),
     );
   }
@@ -234,13 +363,18 @@ class _CheckoutViewState extends State<CheckoutView> {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            ListTile(
-              contentPadding: const EdgeInsets.symmetric(horizontal: 0),
-              title: Text("Payment Method", style: text20Medium393),
-              trailing: const Icon(
-                Icons.chevron_right,
-                size: 26,
-                color: Colors.black,
+            GestureDetector(
+              onTap: () {
+                _showModalPaymentMethod();
+              },
+              child: ListTile(
+                contentPadding: const EdgeInsets.symmetric(horizontal: 0),
+                title: Text("Payment Method", style: text20Medium393),
+                trailing: const Icon(
+                  Icons.chevron_right,
+                  size: 26,
+                  color: Colors.black,
+                ),
               ),
             ),
             const SizedBox(

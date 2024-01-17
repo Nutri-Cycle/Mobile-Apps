@@ -17,34 +17,22 @@ class _PickBeneficiaryViewsState extends State<PickBeneficiaryViews> {
   Widget build(BuildContext context) {
     AllSize allSize = AllSize(context);
     return Scaffold(
-      backgroundColor: bgColor,
-      appBar: AppBar(
-        toolbarHeight: 70,
-        backgroundColor: Colors.white,
-        elevation: 0,
-        leading: BackButton(
-          color: color393,
-          onPressed: () => Navigator.of(context).pop(),
+        backgroundColor: bgColor,
+        appBar: AppBar(
+          toolbarHeight: 70,
+          backgroundColor: Colors.white,
+          elevation: 0,
+          leading: BackButton(
+            color: color393,
+            onPressed: () => Navigator.of(context).pop(),
+          ),
+          title: Text(
+            "Pick a Beneficiary",
+            style: text24Medium393,
+          ),
+          centerTitle: true,
         ),
-        title: Text(
-          "Pick a Beneficiary",
-          style: text24Medium393,
-        ),
-        centerTitle: true,
-      ),
-      body: SingleChildScrollView(
-        scrollDirection: Axis.vertical,
-        child: Stack(
-          children: [
-            SizedBox(
-              height: ScreenUtil().setHeight(baseHeightDevice) * 0.3,
-              child: const GmapViews(),
-            ),
-            bodyCardWiget()
-          ],
-        ),
-      ),
-    );
+        body: const GmapViews());
   }
 
   Widget bodyCardWiget() {
