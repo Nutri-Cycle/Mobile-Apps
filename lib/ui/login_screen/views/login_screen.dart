@@ -17,7 +17,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
-    ScreenUtil.init(context, designSize: Size(393, 852));
+    ScreenUtil.init(context, designSize: const Size(393, 852));
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.all(18.0),
@@ -100,7 +100,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   primary: btnColor,
                   textStyle: text18Semi393),
-              child: Text('Login'),
+              child: const Text('Login'),
             ),
             SizedBox(height: 30.h),
             Row(
@@ -112,7 +112,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 10.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 10.0),
                   child: Text(
                     'or',
                     style: text14MediumABAB,
@@ -167,7 +167,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => RegisterScreen(),
+                          builder: (context) => const RegisterScreen(),
                         ));
                   }),
                   child: Text('Register',

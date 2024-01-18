@@ -4,7 +4,7 @@ import 'package:nutricycle_mobileapps/utils/my_separator.dart';
 import 'package:nutricycle_mobileapps/utils/navigator_screen.dart';
 import 'package:nutricycle_mobileapps/utils/size_font.dart';
 import 'package:nutricycle_mobileapps/utils/theme_color.dart';
-import 'dart:ui' as ui;
+import 'dart:ui' as uii;
 
 class CheckoutView extends StatefulWidget {
   static const routeName = '/checkout';
@@ -218,7 +218,7 @@ class _CheckoutViewState extends State<CheckoutView> {
                       style: text20Medium222,
                     ),
                     const WidgetSpan(
-                      alignment: ui.PlaceholderAlignment.middle,
+                      alignment: uii.PlaceholderAlignment.middle,
                       child: Icon(
                         Icons.chevron_right,
                         size: 26,
