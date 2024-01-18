@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nutricycle_mobileapps/ui/register_screen/views/register_screen.dart';
+import 'package:nutricycle_mobileapps/widgets/navigation_bar_widgets.dart';
 
 import '../../../utils/theme_color.dart';
 import '../../../widgets/custom_form_field_text_widgets.dart';
@@ -90,7 +91,13 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             SizedBox(height: 25.h),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => NavigationBarWidgets(),
+                    ));
+              },
               style: ElevatedButton.styleFrom(
                   padding:
                       EdgeInsets.symmetric(horizontal: 156.w, vertical: 21.h),
