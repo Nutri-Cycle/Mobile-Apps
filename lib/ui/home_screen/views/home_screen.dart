@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
-import '../../../utils/theme_color.dart';
+import 'package:nutricycle_mobileapps/ui/detailFood/detail_food.dart';
+import 'package:nutricycle_mobileapps/utils/navigator_screen.dart';
+import 'package:nutricycle_mobileapps/utils/theme_colors.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -13,7 +14,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    ScreenUtil.init(context, designSize: Size(393, 852));
+    ScreenUtil.init(context, designSize: const Size(393, 852));
     return Scaffold(
         body: ListView(
       children: [
@@ -47,21 +48,21 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     GestureDetector(
                       onTap: () {},
-                      child: Container(
+                      child: SizedBox(
                           height: 65.h,
                           child: Image.asset('assets/images/category_1.png')),
                     ),
                     SizedBox(width: 15.w),
                     GestureDetector(
                       onTap: () {},
-                      child: Container(
+                      child: SizedBox(
                           height: 65.h,
                           child: Image.asset('assets/images/category_2.png')),
                     ),
                     SizedBox(width: 15.w),
                     GestureDetector(
                       onTap: () {},
-                      child: Container(
+                      child: SizedBox(
                           height: 65.h,
                           child: Image.asset('assets/images/category_3.png')),
                     ),
@@ -91,7 +92,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Row(
                   children: [
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        navigateToScreen(context, DetailFood.routeName);
+                      },
                       child: Container(
                         width: 200.w,
                         height: 250.h,
@@ -125,7 +128,6 @@ class _HomeScreenState extends State<HomeScreen> {
                                   padding: const EdgeInsets.only(
                                     top: 14.0,
                                     left: 18.0,
-                                    right: 18.0,
                                   ),
                                   child: Stack(
                                     children: [
@@ -139,7 +141,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                 children: [
                                                   Row(
                                                     children: [
-                                                      Container(
+                                                      SizedBox(
                                                         height: 15.h,
                                                         child: Image.asset(
                                                           'assets/images/star_rating.png',
@@ -273,7 +275,6 @@ class _HomeScreenState extends State<HomeScreen> {
                                   padding: const EdgeInsets.only(
                                     top: 14.0,
                                     left: 18.0,
-                                    right: 18.0,
                                   ),
                                   child: Stack(
                                     children: [
@@ -287,7 +288,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                 children: [
                                                   Row(
                                                     children: [
-                                                      Container(
+                                                      SizedBox(
                                                         height: 15.h,
                                                         child: Image.asset(
                                                           'assets/images/star_rating.png',
@@ -422,7 +423,6 @@ class _HomeScreenState extends State<HomeScreen> {
                                   padding: const EdgeInsets.only(
                                     top: 14.0,
                                     left: 18.0,
-                                    right: 18.0,
                                   ),
                                   child: Stack(
                                     children: [
@@ -436,7 +436,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                 children: [
                                                   Row(
                                                     children: [
-                                                      Container(
+                                                      SizedBox(
                                                         height: 15.h,
                                                         child: Image.asset(
                                                           'assets/images/star_rating.png',
@@ -539,7 +539,7 @@ class _HomeScreenState extends State<HomeScreen> {
               SizedBox(height: 50.h),
               GestureDetector(
                 onTap: () {},
-                child: Container(
+                child: SizedBox(
                     width: 500.w,
                     height: 230.h,
                     child: Image.asset('assets/images/banner_info.png')),
@@ -598,7 +598,6 @@ class _HomeScreenState extends State<HomeScreen> {
                               padding: const EdgeInsets.only(
                                 top: 10.0,
                                 left: 18.0,
-                                right: 18.0,
                               ),
                               child: Row(
                                 children: [
@@ -665,7 +664,6 @@ class _HomeScreenState extends State<HomeScreen> {
                               padding: const EdgeInsets.only(
                                 top: 10.0,
                                 left: 18.0,
-                                right: 18.0,
                               ),
                               child: Row(
                                 children: [
@@ -733,7 +731,6 @@ class _HomeScreenState extends State<HomeScreen> {
                               padding: const EdgeInsets.only(
                                 top: 10.0,
                                 left: 18.0,
-                                right: 18.0,
                               ),
                               child: Row(
                                 children: [

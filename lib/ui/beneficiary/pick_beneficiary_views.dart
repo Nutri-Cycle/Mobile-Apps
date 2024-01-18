@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nutricycle_mobileapps/ui/gmap_views/gmap_views.dart';
 import 'package:nutricycle_mobileapps/utils/size_font.dart';
-import 'package:nutricycle_mobileapps/utils/theme_color.dart';
+import 'package:nutricycle_mobileapps/utils/theme_colors.dart';
 import 'package:nutricycle_mobileapps/utils/navigator_screen.dart';
 
 class PickBeneficiaryViews extends StatefulWidget {

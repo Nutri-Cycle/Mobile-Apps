@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nutricycle_mobileapps/ui/checkout/checkout_view.dart';
 import 'package:nutricycle_mobileapps/utils/navigator_screen.dart';
 import 'package:nutricycle_mobileapps/utils/size_font.dart';
-import 'package:nutricycle_mobileapps/utils/theme_color.dart';
+import 'package:nutricycle_mobileapps/utils/theme_colors.dart';
 
 class DetailSufferView extends StatefulWidget {
   static const routeName = '/detail_suffer';
