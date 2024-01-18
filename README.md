@@ -2,7 +2,8 @@
 
 ![Logo Nutricycle](https://lh3.googleusercontent.com/drive-viewer/AEYmBYQL-NXfdIN88d8iv_kZ0iEj6YJOcXUfEDtF2A7UH1k3o7B6IX26G3QBt2uzdvHZBXIAqMlpAAoL23JVRTQRymrRZPO0CQ=w1920-h945)
 
-![Logo Nutricycle](https://drive.google.com/file/d/14BHq3t1F9LYjX5XOV31DM00t_zPC6Yn3/view?usp=drive_link)
+
+<img src="https://drive.google.com/file/d/14BHq3t1F9LYjX5XOV31DM00t_zPC6Yn3/view?usp=drive_link" width="200" height="120" />
 
 NutriCycle, designed to provide a platform to buy and sell leftover food with good quality and provide a platform to donate basic food items to stunted people in need, with an easy-to-use platform to optimize Food Loss and Waste and help in reducing stunting rates in Indonesia to ensure the welfare of the Indonesian people.
 
