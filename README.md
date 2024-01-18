@@ -14,7 +14,7 @@ NutriCycle, designed to provide a platform to buy and sell leftover food with go
 # Tools use :
 
 1. **Flutter 3.0.0**
-2. **Dart**
+2. **Dart 2.17.0**
 3. **Visual Studio Code**
 4. **Android Studio**
 
