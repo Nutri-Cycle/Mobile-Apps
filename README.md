@@ -29,12 +29,16 @@ NutriCycle, designed to provide a platform to buy and sell leftover food with go
 ![App Screenshot](https://firebasestorage.googleapis.com/v0/b/flutter-mie-ayu.appspot.com/o/intro.png?alt=media&token=8863a09e-a793-4541-a410-7bb7c0338ad4)
 &nbsp;
 ## Screenshots
-
+Introduction Screen
 ![App Screenshot](https://firebasestorage.googleapis.com/v0/b/flutter-mie-ayu.appspot.com/o/iPhone%2014%20%26%2015%20Pro%20-%202%20(1).png?alt=media&token=f565ee59-3ece-47ea-868e-c9ec7b855762)
 &nbsp;
-![App Screenshot](https://firebasestorage.googleapis.com/v0/b/flutter-mie-ayu.appspot.com/o/homepage.png?alt=media&token=18afa28e-2fb5-47ed-aecf-4e5a8689fb84)
+= = = = = = = =
+Home Screen
+![App Screenshot](https://firebasestorage.googleapis.com/v0/b/flutter-mie-ayu.appspot.com/o/homepage%20(1).png?alt=media&token=3e5cf483-5336-4b6f-9f0e-b27705742ebe)
 &nbsp;
-![App Screenshot](https://firebasestorage.googleapis.com/v0/b/flutter-mie-ayu.appspot.com/o/bene.png?alt=media&token=dcd895c7-ed14-43a1-8d38-7c6e7bf56b61)
+= = = = = = = =
+Beneficiary Screen
+![App Screenshot](https://firebasestorage.googleapis.com/v0/b/flutter-mie-ayu.appspot.com/o/iPhone%2014%20%26%2015%20Pro%20-%2013%20(1).png?alt=media&token=438597ea-2f8b-49f9-b837-f2d742ea7026)
 &nbsp;
 
 
