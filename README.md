@@ -4,6 +4,12 @@
 
 NutriCycle, designed to provide a platform to buy and sell leftover food with good quality and provide a platform to donate basic food items to stunted people in need, with an easy-to-use platform to optimize Food Loss and Waste and help in reducing stunting rates in Indonesia to ensure the welfare of the Indonesian people.
 
+# How to run
+1. `git clone https://github.com/Nutri-Cycle/Mobile-Apps.git` in terminal
+2. `cd Mobile-Apps`
+3. `flutter pub get`
+4. `flutter run`
+
 # Tim Peduli Stunting - (Nutricycle Apps)
 
 1. **Arrizal Bintang Ramadhan** - Hacker
