@@ -5,6 +5,7 @@ import 'package:nutricycle_mobileapps/ui/register_screen/views/register_screen.d
 import 'package:nutricycle_mobileapps/utils/theme_color.dart';
 
 class IntroductionScreen extends StatefulWidget {
+  static const routeName = '/intro_screen';
   const IntroductionScreen({Key? key}) : super(key: key);
 
   @override
@@ -14,7 +15,7 @@ class IntroductionScreen extends StatefulWidget {
 class _IntroductionScreenState extends State<IntroductionScreen> {
   @override
   Widget build(BuildContext context) {
-    ScreenUtil.init(context, designSize: Size(393, 852));
+    ScreenUtil.init(context, designSize: const Size(393, 852));
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.all(18.0),
@@ -46,7 +47,7 @@ class _IntroductionScreenState extends State<IntroductionScreen> {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => RegisterScreen(),
+                      builder: (context) => const RegisterScreen(),
                     ));
               },
               style: ElevatedButton.styleFrom(
@@ -58,7 +59,7 @@ class _IntroductionScreenState extends State<IntroductionScreen> {
                   ),
                   primary: btnColor,
                   textStyle: text18Semi393),
-              child: Text('Start'),
+              child: const Text('Start'),
             ),
             SizedBox(height: 25.h),
             Row(
@@ -72,7 +73,7 @@ class _IntroductionScreenState extends State<IntroductionScreen> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => LoginScreen(),
+                          builder: (context) => const LoginScreen(),
                         ));
                   }),
                   child: Text('Login',

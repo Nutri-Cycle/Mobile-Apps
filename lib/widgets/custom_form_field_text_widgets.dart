@@ -30,11 +30,11 @@ class CustomTextFormFieldWidgets extends StatelessWidget {
     final inputDecoration = InputDecoration(
       suffixIcon: isPassword
           ? GestureDetector(
+              onTap: onTap,
               child: Icon(
                 isPasswordHide ? LineIcons.eyeSlash : LineIcons.eye,
                 color: color332,
               ),
-              onTap: onTap,
             )
           : null,
       hintText: hintText,
@@ -51,7 +51,7 @@ class CustomTextFormFieldWidgets extends StatelessWidget {
       ),
     );
 
-    return Container(
+    return SizedBox(
       // width: 160.w,
       // height: 60.h,
       width: width,
