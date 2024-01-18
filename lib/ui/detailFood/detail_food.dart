@@ -250,7 +250,7 @@ class _DetailFoodState extends State<DetailFood> {
                       Row(
                         children: [
                           Text(
-                            "Rp 12.000",
+                            "Rp 70.000",
                             style: text24BoldGreen,
                           )
                         ],

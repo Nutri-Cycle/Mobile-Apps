@@ -154,7 +154,7 @@ class _CheckoutViewState extends State<CheckoutView> {
             ListView.builder(
                 physics: const NeverScrollableScrollPhysics(),
                 shrinkWrap: true,
-                itemCount: 5,
+                itemCount: 1,
                 itemBuilder: (context, index) {
                   return Padding(
                     padding: const EdgeInsets.only(top: 15.0),
@@ -393,7 +393,7 @@ class _CheckoutViewState extends State<CheckoutView> {
                   style: text18MediumABAB,
                 ),
                 Text(
-                  "Rp 200",
+                  "Rp 70.000",
                   style: text17Semibold222,
                 )
               ],
@@ -439,7 +439,7 @@ class _CheckoutViewState extends State<CheckoutView> {
                   style: text18MediumABAB,
                 ),
                 Text(
-                  "Rp 200",
+                  "Rp 70.000",
                   style: text17Semibold222,
                 )
               ],

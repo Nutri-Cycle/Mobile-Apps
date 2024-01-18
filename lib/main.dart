@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
             theme: ThemeData(fontFamily: 'Poppins'),
             debugShowCheckedModeBanner: false,
             // theme: ThemeData(fontFamily: 'Poppins'),
-            initialRoute: DonationView.routeName,
+            initialRoute: DetailFood.routeName,
             routes: {
               IntroductionScreen.routeName: (context) =>
                   const IntroductionScreen(),
