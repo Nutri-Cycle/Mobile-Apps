@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nutricycle_mobileapps/utils/theme_color.dart';
 
 import '../ui/home_screen/views/home_screen.dart';
+import '../ui/my_order_screen/views/my_order_screen.dart';
 
 class NavigationBarWidgets extends StatefulWidget {
   @override
@@ -28,7 +29,7 @@ class _NavigationBarWidgetsState extends State<NavigationBarWidgets> {
 
   List<Widget> pages = [
     HomeScreen(),
-    Placeholder(),
+    MyOrderScreen(),
     Placeholder(),
     Placeholder(),
   ];
