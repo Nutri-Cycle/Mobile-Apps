@@ -112,6 +112,9 @@ TextStyle text10SemiABAB =
 TextStyle text10Semi7B84 =
     TextStyle(fontSize: 10.sp, fontWeight: FontWeight.w600, color: color7b84);
 
+TextStyle text10MediumB1BB =
+    TextStyle(fontSize: 10.sp, fontWeight: FontWeight.w500, color: colorb1bb);
+
 TextStyle text14Medium393 =
     TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w500, color: color393);
 

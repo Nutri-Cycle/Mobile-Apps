@@ -3,6 +3,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:nutricycle_mobileapps/ui/detail_suffer/detail_suffer_view.dart';
+import 'package:nutricycle_mobileapps/utils/navigator_screen.dart';
 import 'package:nutricycle_mobileapps/utils/theme_color.dart';
 
 class GmapViews extends StatefulWidget {
@@ -255,146 +257,151 @@ class _GmapViewsState extends State<GmapViews> {
                         itemBuilder: (context, index) {
                           return Padding(
                             padding: const EdgeInsets.only(top: 20),
-                            child: Card(
-                              elevation: 6,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(
-                                    24.0), // Adjust the radius as needed
-                              ),
-                              child: Column(
-                                children: [
-                                  Padding(
-                                    padding: const EdgeInsets.only(
-                                        top: 20.0,
-                                        bottom: 20,
-                                        left: 20,
-                                        right: 20),
-                                    child: ListTile(
-                                      contentPadding:
-                                          const EdgeInsets.symmetric(
-                                        horizontal: 0,
-                                      ),
-                                      leading: Container(
-                                        height: 50,
-                                        width: 50,
-                                        decoration: const BoxDecoration(
-                                          image: DecorationImage(
-                                            fit: BoxFit.cover,
-                                            image: AssetImage(
-                                                "assets/images/suffer.png"),
+                            child: GestureDetector(
+                              onTap: () => navigateToScreen(
+                                  context, DetailSufferView.routeName),
+                              child: Card(
+                                elevation: 6,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(
+                                      24.0), // Adjust the radius as needed
+                                ),
+                                child: Column(
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.only(
+                                          top: 20.0,
+                                          bottom: 20,
+                                          left: 20,
+                                          right: 20),
+                                      child: ListTile(
+                                        contentPadding:
+                                            const EdgeInsets.symmetric(
+                                          horizontal: 0,
+                                        ),
+                                        leading: Container(
+                                          height: 50,
+                                          width: 50,
+                                          decoration: const BoxDecoration(
+                                            image: DecorationImage(
+                                              fit: BoxFit.cover,
+                                              image: AssetImage(
+                                                  "assets/images/suffer.png"),
+                                            ),
+                                          ),
+                                        ),
+                                        title: Text(
+                                          "Randi",
+                                          overflow: TextOverflow.ellipsis,
+                                          maxLines: 1,
+                                          style: text22Semi393,
+                                        ),
+                                        subtitle: Text(
+                                          "5 years old",
+                                          style: text14MediumABAB,
+                                        ),
+                                        trailing: Container(
+                                          padding: const EdgeInsets.symmetric(
+                                              horizontal: 10, vertical: 6),
+                                          decoration: BoxDecoration(
+                                            color: bgColorBlue,
+                                            borderRadius:
+                                                BorderRadius.circular(12),
+                                          ),
+                                          child: Text(
+                                            "4th donation",
+                                            style: text14Semi1168,
                                           ),
                                         ),
                                       ),
-                                      title: Text(
-                                        "Randi",
-                                        overflow: TextOverflow.ellipsis,
-                                        maxLines: 1,
-                                        style: text22Semi393,
-                                      ),
-                                      subtitle: Text(
-                                        "5 years old",
-                                        style: text14MediumABAB,
-                                      ),
-                                      trailing: Container(
-                                        padding: const EdgeInsets.symmetric(
-                                            horizontal: 10, vertical: 6),
-                                        decoration: BoxDecoration(
-                                          color: bgColorBlue,
-                                          borderRadius:
-                                              BorderRadius.circular(12),
-                                        ),
-                                        child: Text(
-                                          "4th donation",
-                                          style: text14Semi1168,
-                                        ),
-                                      ),
                                     ),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.only(
-                                        bottom: 20, left: 20, right: 20),
-                                    child: Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        Column(
-                                          children: [
-                                            Text(
-                                              "Weight",
-                                              style: text12Semi7b84,
-                                            ),
-                                            Text(
-                                              "80 kg",
-                                              style: text14Semi393,
-                                            ),
-                                          ],
-                                        ),
-                                        Column(
-                                          children: [
-                                            Text(
-                                              "Height",
-                                              style: text12Semi7b84,
-                                            ),
-                                            Text(
-                                              "50 cm",
-                                              style: text14Semi393,
-                                            ),
-                                          ],
-                                        ),
-                                        Column(
-                                          children: [
-                                            Text(
-                                              "Motor Delay",
-                                              style: text12Semi7b84,
-                                            ),
-                                            Text(
-                                              "Walking",
-                                              style: text14Semi393,
-                                            ),
-                                          ],
-                                        )
-                                      ],
-                                    ),
-                                  ),
-                                  const SizedBox(
-                                    height: 20,
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.only(
-                                        right: 20.0, bottom: 20),
-                                    child: Row(
-                                      mainAxisAlignment: MainAxisAlignment.end,
-                                      children: [
-                                        const SizedBox(),
-                                        const SizedBox(),
-                                        ElevatedButton(
-                                          onPressed: () {},
-                                          style: ElevatedButton.styleFrom(
-                                            primary: btnColor,
-                                            shape: RoundedRectangleBorder(
-                                              borderRadius:
-                                                  BorderRadius.circular(
-                                                      30.0), // Corner radius
-                                            ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(
+                                          bottom: 20, left: 20, right: 20),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          Column(
+                                            children: [
+                                              Text(
+                                                "Weight",
+                                                style: text12Semi7b84,
+                                              ),
+                                              Text(
+                                                "80 kg",
+                                                style: text14Semi393,
+                                              ),
+                                            ],
                                           ),
-                                          child: const Padding(
-                                            padding: EdgeInsets.only(
-                                                left: 10,
-                                                right: 10,
-                                                bottom: 12,
-                                                top: 12),
-                                            child: Text(
-                                              "Donate Now",
-                                              style: TextStyle(
-                                                color: Colors.white,
+                                          Column(
+                                            children: [
+                                              Text(
+                                                "Height",
+                                                style: text12Semi7b84,
+                                              ),
+                                              Text(
+                                                "50 cm",
+                                                style: text14Semi393,
+                                              ),
+                                            ],
+                                          ),
+                                          Column(
+                                            children: [
+                                              Text(
+                                                "Motor Delay",
+                                                style: text12Semi7b84,
+                                              ),
+                                              Text(
+                                                "Walking",
+                                                style: text14Semi393,
+                                              ),
+                                            ],
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                    const SizedBox(
+                                      height: 20,
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(
+                                          right: 20.0, bottom: 20),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.end,
+                                        children: [
+                                          const SizedBox(),
+                                          const SizedBox(),
+                                          ElevatedButton(
+                                            onPressed: () {},
+                                            style: ElevatedButton.styleFrom(
+                                              primary: btnColor,
+                                              shape: RoundedRectangleBorder(
+                                                borderRadius:
+                                                    BorderRadius.circular(
+                                                        30.0), // Corner radius
+                                              ),
+                                            ),
+                                            child: const Padding(
+                                              padding: EdgeInsets.only(
+                                                  left: 10,
+                                                  right: 10,
+                                                  bottom: 12,
+                                                  top: 12),
+                                              child: Text(
+                                                "Donate Now",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                ),
                                               ),
                                             ),
                                           ),
-                                        ),
-                                      ],
-                                    ),
-                                  )
-                                ],
+                                        ],
+                                      ),
+                                    )
+                                  ],
+                                ),
                               ),
                             ),
                           );

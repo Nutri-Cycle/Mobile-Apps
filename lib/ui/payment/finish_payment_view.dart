@@ -3,6 +3,7 @@ import 'package:nutricycle_mobileapps/utils/size_font.dart';
 import 'package:nutricycle_mobileapps/utils/theme_color.dart';
 
 class FinishPaymentView extends StatefulWidget {
+  static const routeName = '/finish_payment';
   const FinishPaymentView({Key? key}) : super(key: key);
 
   @override

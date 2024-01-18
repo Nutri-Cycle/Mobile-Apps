@@ -6,6 +6,7 @@ import 'package:nutricycle_mobileapps/utils/theme_color.dart';
 import '../../../utils/size_font.dart';
 
 class IntroductionScreen extends StatefulWidget {
+  static const routeName = '/intro_screen';
   const IntroductionScreen({Key? key}) : super(key: key);
 
   @override
@@ -52,8 +53,8 @@ class _IntroductionScreenState extends State<IntroductionScreen> {
           ElevatedButton(
             onPressed: () {},
             style: ElevatedButton.styleFrom(
-                padding:
-                    EdgeInsets.symmetric(horizontal: 165.0, vertical: 22.0),
+                padding: const EdgeInsets.symmetric(
+                    horizontal: 165.0, vertical: 22.0),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(50.0), // Circular radius
                 ),
@@ -61,7 +62,7 @@ class _IntroductionScreenState extends State<IntroductionScreen> {
                 textStyle: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: AllSize.fontRegular)),
-            child: Text('Start'),
+            child: const Text('Start'),
           ),
           SizedBox(height: allSize.size.height * 0.025),
           Row(

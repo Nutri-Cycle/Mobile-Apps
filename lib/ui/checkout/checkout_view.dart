@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:nutricycle_mobileapps/ui/payment/waiting_payment_view.dart';
 import 'package:nutricycle_mobileapps/utils/my_separator.dart';
+import 'package:nutricycle_mobileapps/utils/navigator_screen.dart';
 import 'package:nutricycle_mobileapps/utils/size_font.dart';
 import 'package:nutricycle_mobileapps/utils/theme_color.dart';
 import 'dart:ui' as ui;
 
 class CheckoutView extends StatefulWidget {
+  static const routeName = '/checkout';
   const CheckoutView({Key? key}) : super(key: key);
 
   @override
@@ -23,7 +26,7 @@ class _CheckoutViewState extends State<CheckoutView> {
         elevation: 0,
         leading: BackButton(
           color: color393,
-          onPressed: () => Navigator.of(context).pop(),
+          onPressed: () => backToScreen(context),
         ),
         title: Text(
           "Checkout",
@@ -59,7 +62,9 @@ class _CheckoutViewState extends State<CheckoutView> {
                 height: 23,
               ),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  navigateToScreen(context, WaitingPaymentView.routeName);
+                },
                 style: ElevatedButton.styleFrom(
                   primary: btnColor,
                   shape: RoundedRectangleBorder(

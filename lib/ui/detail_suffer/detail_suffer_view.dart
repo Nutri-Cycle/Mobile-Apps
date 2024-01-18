@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:nutricycle_mobileapps/ui/checkout/checkout_view.dart';
+import 'package:nutricycle_mobileapps/utils/navigator_screen.dart';
 import 'package:nutricycle_mobileapps/utils/size_font.dart';
 import 'package:nutricycle_mobileapps/utils/theme_color.dart';
 
 class DetailSufferView extends StatefulWidget {
+  static const routeName = '/detail_suffer';
   const DetailSufferView({Key? key}) : super(key: key);
 
   @override
@@ -21,7 +24,7 @@ class _DetailSufferViewState extends State<DetailSufferView> {
           elevation: 0,
           leading: BackButton(
             color: color393,
-            onPressed: () => Navigator.of(context).pop(),
+            onPressed: () => backToScreen(context),
           ),
           title: Text(
             "Detail Suffer",
@@ -214,7 +217,9 @@ class _DetailSufferViewState extends State<DetailSufferView> {
                 child: Padding(
                   padding: const EdgeInsets.only(bottom: 60.0),
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      navigateToScreen(context, CheckoutView.routeName);
+                    },
                     style: ElevatedButton.styleFrom(
                       primary: btnColor,
                       shape: RoundedRectangleBorder(

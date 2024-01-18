@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:nutricycle_mobileapps/ui/beneficiary/pick_beneficiary_views.dart';
+import 'package:nutricycle_mobileapps/ui/checkout/checkout_view.dart';
+import 'package:nutricycle_mobileapps/utils/navigator_screen.dart';
 import 'package:nutricycle_mobileapps/utils/size_font.dart';
 import 'package:nutricycle_mobileapps/utils/theme_color.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 
 class DetailFood extends StatefulWidget {
+  static const routeName = '/detail_food';
   const DetailFood({Key? key}) : super(key: key);
 
   @override
@@ -32,10 +36,15 @@ class _DetailFoodState extends State<DetailFood> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Image.asset(
-                        "assets/images/left_arrow.png",
-                        width: 20,
-                        height: 20,
+                      GestureDetector(
+                        onTap: () {
+                          backToScreen(context);
+                        },
+                        child: Image.asset(
+                          "assets/images/left_arrow.png",
+                          width: 20,
+                          height: 20,
+                        ),
                       ),
                       Text(
                         "Food Detail",
@@ -256,7 +265,10 @@ class _DetailFoodState extends State<DetailFood> {
                     children: [
                       Expanded(
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            navigateToScreen(
+                                context, PickBeneficiaryViews.routeName);
+                          },
                           style: ElevatedButton.styleFrom(
                             primary: Colors.white,
                             shape: RoundedRectangleBorder(
@@ -284,7 +296,9 @@ class _DetailFoodState extends State<DetailFood> {
                       ),
                       Expanded(
                         child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            navigateToScreen(context, CheckoutView.routeName);
+                          },
                           style: ElevatedButton.styleFrom(
                             primary: btnColor,
                             shape: RoundedRectangleBorder(
