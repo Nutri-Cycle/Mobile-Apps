@@ -253,7 +253,7 @@ class _GmapViewsState extends State<GmapViews> {
                       ListView.builder(
                         physics: const NeverScrollableScrollPhysics(),
                         shrinkWrap: true,
-                        itemCount: 3,
+                        itemCount: 1,
                         itemBuilder: (context, index) {
                           return Padding(
                             padding: const EdgeInsets.only(top: 20),
