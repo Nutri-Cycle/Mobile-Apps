@@ -64,3 +64,9 @@ TextStyle text14Medium4285F4 = TextStyle(
     fontWeight: FontWeight.w500,
     color: color4285F4,
     decoration: TextDecoration.underline);
+
+TextStyle text14Mediumcolor7b84 = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w500,
+    color: color7b84,
+    decoration: TextDecoration.underline);

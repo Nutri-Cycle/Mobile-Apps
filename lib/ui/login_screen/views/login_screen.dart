@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:nutricycle_mobileapps/ui/register_screen/views/register_screen.dart';
 
 import '../../../utils/theme_color.dart';
 import '../../../widgets/custom_form_field_text_widgets.dart';
-import '../../login_screen/views/login_screen.dart';
 
-class RegisterScreen extends StatefulWidget {
-  const RegisterScreen({Key? key}) : super(key: key);
+class LoginScreen extends StatefulWidget {
+  const LoginScreen({Key? key}) : super(key: key);
 
   @override
-  State<RegisterScreen> createState() => _RegisterScreenState();
+  State<LoginScreen> createState() => _LoginScreenState();
 }
 
-class _RegisterScreenState extends State<RegisterScreen> {
+class _LoginScreenState extends State<LoginScreen> {
   bool isChecked = false;
 
   @override
@@ -23,9 +23,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
         padding: const EdgeInsets.all(18.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SizedBox(height: 25.h),
+            SizedBox(height: 50.h),
             Row(
               children: [
                 GestureDetector(
@@ -46,46 +45,22 @@ class _RegisterScreenState extends State<RegisterScreen> {
             ),
             SizedBox(height: 18.h),
             Text(
-              'Register',
+              'Login',
               textAlign: TextAlign.center,
               style: text21Bold,
             ),
             SizedBox(height: 5.h),
             Text(
-              'Fulfill nutrition and eliminate stunting',
+              'Welcome Back!',
               style: text16MediumABAB,
             ),
-            SizedBox(height: 15.h),
-            Text(
-              'Name',
-              textAlign: TextAlign.center,
-              style: text16Medium,
-            ),
-            SizedBox(height: 15.h),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                CustomTextFormFieldWidgets(
-                  width: 170.w,
-                  height: 60.h,
-                  onTap: () {},
-                  hintText: 'First Name',
-                ),
-                CustomTextFormFieldWidgets(
-                  width: 170.w,
-                  height: 60.h,
-                  onTap: () {},
-                  hintText: 'Last Name',
-                ),
-              ],
-            ),
-            SizedBox(height: 15.h),
+            SizedBox(height: 30.h),
             Text(
               'Email',
               textAlign: TextAlign.center,
               style: text16Medium,
             ),
-            SizedBox(height: 15.h),
+            SizedBox(height: 10.h),
             CustomTextFormFieldWidgets(
               onTap: () {},
               hintText: 'Input Nama',
@@ -96,79 +71,38 @@ class _RegisterScreenState extends State<RegisterScreen> {
               textAlign: TextAlign.center,
               style: text16Medium,
             ),
-            SizedBox(height: 15.h),
+            SizedBox(height: 10.h),
             CustomTextFormFieldWidgets(
               onTap: () {},
               hintText: 'Input Password',
             ),
             SizedBox(height: 15.h),
             Row(
+              mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                Checkbox(
-                  value: isChecked,
-                  onChanged: (value) {
-                    setState(() {
-                      isChecked = value!;
-                    });
-                  },
-                ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      children: [
-                        Text('I have read and agree to'),
-                        InkWell(
-                            onTap: () {},
-                            child: Text(
-                              ' the Terms and',
-                              style: text14Medium4285F4,
-                            )),
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        InkWell(
-                            onTap: () {},
-                            child: Text(
-                              ' Condition',
-                              style: text14Medium4285F4,
-                            )),
-                        Text(' , '),
-                        InkWell(
-                            onTap: () {},
-                            child: Text(
-                              ' Privacy Policy',
-                              style: text14Medium4285F4,
-                            )),
-                        Text(' , and  NutriCycle '),
-                      ],
-                    ),
-                    InkWell(
-                        onTap: () {},
-                        child: Text(
-                          ' User Agreement',
-                          style: text14Medium4285F4,
-                        )),
-                  ],
-                ),
+                InkWell(
+                    onTap: () {},
+                    child: Text(
+                      ' Forget Password ?',
+                      style: text14Mediumcolor7b84,
+                    )),
               ],
             ),
-            SizedBox(height: 15.h),
+            SizedBox(height: 25.h),
             ElevatedButton(
               onPressed: () {},
               style: ElevatedButton.styleFrom(
                   padding:
-                      EdgeInsets.symmetric(horizontal: 145.w, vertical: 21.h),
+                      EdgeInsets.symmetric(horizontal: 156.w, vertical: 21.h),
                   shape: RoundedRectangleBorder(
                     borderRadius:
                         BorderRadius.circular(50.0), // Circular radius
                   ),
                   primary: btnColor,
                   textStyle: text18Semi393),
-              child: Text('Register'),
+              child: Text('Login'),
             ),
-            SizedBox(height: 15.h),
+            SizedBox(height: 30.h),
             Row(
               children: [
                 Expanded(
@@ -192,7 +126,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 ),
               ],
             ),
-            SizedBox(height: 15.h),
+            SizedBox(height: 25.h),
             ElevatedButton(
               onPressed: () {},
               style: ElevatedButton.styleFrom(
@@ -215,17 +149,17 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   ),
                   SizedBox(width: 8.h),
                   Text(
-                    'Register with Google',
+                    'Login with Google Account',
                     style: text18Semi393,
                   ),
                 ],
               ),
             ),
-            SizedBox(height: 15.h),
+            SizedBox(height: 25.h),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text('Have a account?',
+                Text('Don’t have account?',
                     textAlign: TextAlign.center, style: text14Semibold),
                 SizedBox(width: 8.w),
                 GestureDetector(
@@ -233,10 +167,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => LoginScreen(),
+                          builder: (context) => RegisterScreen(),
                         ));
                   }),
-                  child: Text('Login',
+                  child: Text('Register',
                       textAlign: TextAlign.center, style: text18Semi393),
                 )
               ],
