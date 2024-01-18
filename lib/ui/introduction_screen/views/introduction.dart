@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:nutricycle_mobileapps/ui/register_screen/views/register_screen.dart';
 import 'package:nutricycle_mobileapps/utils/theme_color.dart';
 
 class IntroductionScreen extends StatefulWidget {
@@ -40,7 +41,13 @@ class _IntroductionScreenState extends State<IntroductionScreen> {
             ),
             SizedBox(height: 25.h),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => RegisterScreen(),
+                    ));
+              },
               style: ElevatedButton.styleFrom(
                   padding:
                       EdgeInsets.symmetric(horizontal: 150.w, vertical: 21.h),
