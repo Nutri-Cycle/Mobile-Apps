@@ -26,18 +26,9 @@ NutriCycle, designed to provide a platform to buy and sell leftover food with go
 
 ## Screenshots
 
-![App Screenshot](https://firebasestorage.googleapis.com/v0/b/flutter-mie-ayu.appspot.com/o/intro.png?alt=media&token=8863a09e-a793-4541-a410-7bb7c0338ad4)
-&nbsp;
-## Screenshots
-
 ![App Screenshot](https://firebasestorage.googleapis.com/v0/b/flutter-mie-ayu.appspot.com/o/introsc.png?alt=media&token=1951d5fd-1f5d-4b25-a635-1e44cd18b0bb)
 
-
-
 ![App Screenshot](https://firebasestorage.googleapis.com/v0/b/flutter-mie-ayu.appspot.com/o/homesc.png?alt=media&token=d5040b9c-2902-4f81-b54a-c8e4482649d7)
-
-
-![App Screenshot](https://firebasestorage.googleapis.com/v0/b/flutter-mie-ayu.appspot.com/o/benesc.png?alt=media&token=8b15a3a0-0b31-4e7c-93d7-2d0738493288)
 
 
 
