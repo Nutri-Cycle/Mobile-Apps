@@ -2,24 +2,26 @@ import 'package:flutter/material.dart';
 import 'package:nutricycle_mobileapps/ui/detailFood/detail_food.dart';
 import 'package:nutricycle_mobileapps/utils/navigator_screen.dart';
 import 'package:nutricycle_mobileapps/utils/size_font.dart';
-import 'package:nutricycle_mobileapps/utils/theme_color.dart';
+import 'package:nutricycle_mobileapps/utils/theme_colors.dart';
 
-class DonationView extends StatefulWidget {
+class DonationScreen extends StatefulWidget {
   static const routeName = '/donation_view';
-  const DonationView({Key? key}) : super(key: key);
+  const DonationScreen({Key? key}) : super(key: key);
 
   @override
-  State<DonationView> createState() => _DonationViewState();
+  State<DonationScreen> createState() => _DonationScreenState();
 }
 
-class _DonationViewState extends State<DonationView> {
+class _DonationScreenState extends State<DonationScreen> {
   @override
   Widget build(BuildContext context) {
     AllSize allSize = AllSize(context);
     return Scaffold(
       backgroundColor: bgColor,
       appBar: AppBar(
+        centerTitle: false,
         toolbarHeight: 70,
+        leadingWidth: 0,
         backgroundColor: Colors.white,
         elevation: 0,
         title: Text(

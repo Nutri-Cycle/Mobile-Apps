@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nutricycle_mobileapps/ui/register_screen/views/register_screen.dart';
 import 'package:nutricycle_mobileapps/widgets/navigation_bar_widgets.dart';
 
-import '../../../utils/theme_color.dart';
+import '../../../utils/theme_colors.dart';
 import '../../../widgets/custom_form_field_text_widgets.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -18,8 +18,9 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
-    ScreenUtil.init(context, designSize: Size(393, 852));
+    ScreenUtil.init(context, designSize: const Size(393, 852));
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Padding(
         padding: const EdgeInsets.all(18.0),
         child: Column(
@@ -76,6 +77,7 @@ class _LoginScreenState extends State<LoginScreen> {
             CustomTextFormFieldWidgets(
               onTap: () {},
               hintText: 'Input Password',
+              isPassword: true,
             ),
             SizedBox(height: 15.h),
             Row(
@@ -99,15 +101,15 @@ class _LoginScreenState extends State<LoginScreen> {
                     ));
               },
               style: ElevatedButton.styleFrom(
-                  padding:
-                      EdgeInsets.symmetric(horizontal: 156.w, vertical: 21.h),
+                  minimumSize: const Size.fromHeight(50),
+                  padding: EdgeInsets.symmetric(vertical: 21.h),
                   shape: RoundedRectangleBorder(
                     borderRadius:
                         BorderRadius.circular(50.0), // Circular radius
                   ),
                   primary: btnColor,
                   textStyle: text18Semi393),
-              child: Text('Login'),
+              child: const Text('Login'),
             ),
             SizedBox(height: 30.h),
             Row(
@@ -119,7 +121,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 10.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 10.0),
                   child: Text(
                     'or',
                     style: text14MediumABAB,
@@ -174,7 +176,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => RegisterScreen(),
+                          builder: (context) => const RegisterScreen(),
                         ));
                   }),
                   child: Text('Register',

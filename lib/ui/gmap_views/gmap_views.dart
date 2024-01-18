@@ -5,7 +5,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:nutricycle_mobileapps/ui/detail_suffer/detail_suffer_view.dart';
 import 'package:nutricycle_mobileapps/utils/navigator_screen.dart';
-import 'package:nutricycle_mobileapps/utils/theme_color.dart';
+import 'package:nutricycle_mobileapps/utils/theme_colors.dart';
 
 class GmapViews extends StatefulWidget {
   const GmapViews({Key? key}) : super(key: key);

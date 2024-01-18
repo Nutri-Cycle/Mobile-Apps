@@ -1,16 +1,23 @@
-# nutricycle_mobileapps
+# Nutri Cycle
 
-A new Flutter project.
+![Logo Nutricycle](https://lh3.googleusercontent.com/drive-viewer/AEYmBYQL-NXfdIN88d8iv_kZ0iEj6YJOcXUfEDtF2A7UH1k3o7B6IX26G3QBt2uzdvHZBXIAqMlpAAoL23JVRTQRymrRZPO0CQ=w1920-h945)
 
-## Getting Started
+NutriCycle, designed to provide a platform to buy and sell leftover food with good quality and provide a platform to donate basic food items to stunted people in need, with an easy-to-use platform to optimize Food Loss and Waste and help in reducing stunting rates in Indonesia to ensure the welfare of the Indonesian people.
 
-This project is a starting point for a Flutter application.
+# Tim Peduli Stunting - (Nutricycle Apps)
 
-A few resources to get you started if this is your first Flutter project:
+1. **Arrizal Bintang Ramadhan** - Hacker
+2. **Nafis Almajid** - Hustler
+3. **Daffa Pandu Dewanata** - Hipster
+4. **Adit Hernowo** - Hacker
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# Tools use :
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. **Flutter 3.0.0**
+2. **Dart**
+3. **Visual Studio Code**
+4. **Android Studio**
+
+
+## Link Gdrive Screenshots
+[Link Gdrive Screenshots](https://drive.google.com/drive/folders/1nzeJmg7i2hjkg0HZm29gGUNnqM5a0cyS?usp=sharing)

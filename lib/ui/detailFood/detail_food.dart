@@ -4,7 +4,7 @@ import 'package:nutricycle_mobileapps/ui/beneficiary/pick_beneficiary_views.dart
 import 'package:nutricycle_mobileapps/ui/checkout/checkout_view.dart';
 import 'package:nutricycle_mobileapps/utils/navigator_screen.dart';
 import 'package:nutricycle_mobileapps/utils/size_font.dart';
-import 'package:nutricycle_mobileapps/utils/theme_color.dart';
+import 'package:nutricycle_mobileapps/utils/theme_colors.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
 
 class DetailFood extends StatefulWidget {

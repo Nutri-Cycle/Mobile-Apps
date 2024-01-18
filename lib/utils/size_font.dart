@@ -14,6 +14,8 @@ class AllSize {
   static double fontExtraBig = 36.0.sp;
   static double fontTitle = 40.0.sp;
 
+  static GlobalKey globalKey = GlobalKey();
+
   final Size size;
 
   AllSize(BuildContext context) : size = MediaQuery.of(context).size;

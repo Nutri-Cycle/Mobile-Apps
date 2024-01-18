@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 const double baseWidthDevice = 393.0;
@@ -11,6 +11,12 @@ Color color393 = const Color(0xff393E46);
 Color color7b84 = const Color(0xff7B8490);
 Color color4285F4 = const Color(0xff4285F4);
 Color colorWhite = const Color(0xffffffff);
+
+Color color408BA7 = const Color(0xff408BA7);
+Color colorE3EBEE = const Color(0xffE3EBEE);
+Color colorFFB534 = const Color(0xffFFB534);
+Color color8C8F93 = const Color(0xff8C8F93);
+Color btnReadMore = const Color(0xffABC270);
 
 const String testingUIText = 'NutriCycleViewLongTextForTestingUserInteractive';
 
@@ -37,6 +43,9 @@ TextStyle text16Medium8686 =
 TextStyle text21Bold =
     TextStyle(fontSize: 21, fontWeight: FontWeight.bold, color: colorText);
 
+TextStyle text18Bold =
+    TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: colorText);
+
 TextStyle text28Bold =
     TextStyle(fontSize: 28, fontWeight: FontWeight.bold, color: colorText);
 
@@ -48,6 +57,9 @@ TextStyle text16Semi393 =
 
 TextStyle text16Semi332 =
     TextStyle(fontSize: 16.sp, fontWeight: FontWeight.w500, color: color332);
+
+TextStyle text16Semi7b84 =
+    TextStyle(fontSize: 16.sp, fontWeight: FontWeight.w500, color: color7b84);
 
 TextStyle text18Semi393 =
     TextStyle(fontSize: 18.sp, fontWeight: FontWeight.w600, color: color393);
@@ -168,3 +180,30 @@ TextStyle text18Medium7B84 =
 
 TextStyle text17Semibold222 =
     TextStyle(fontSize: 17.sp, fontWeight: FontWeight.w600, color: color222);
+
+TextStyle text16Bold =
+    TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: colorText);
+
+TextStyle text14Bold =
+    TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: colorText);
+
+TextStyle text10MediumABAB =
+    TextStyle(fontSize: 10, fontWeight: FontWeight.w500, color: colorABAB);
+
+TextStyle text8Medium7b84 =
+    TextStyle(fontSize: 12, fontWeight: FontWeight.w500, color: color7b84);
+
+TextStyle text14Mediumcolor408BA7 = TextStyle(
+  fontSize: 14,
+  fontWeight: FontWeight.w500,
+  color: color408BA7,
+);
+
+TextStyle text14ColorWhite =
+    TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: colorWhite);
+
+TextStyle text12Medium8C8F93 =
+    TextStyle(fontSize: 12, fontWeight: FontWeight.w500, color: color8C8F93);
+
+TextStyle text14MediumbtnReadMore =
+    TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: btnReadMore);

@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:nutricycle_mobileapps/utils/theme_color.dart';
+import 'package:nutricycle_mobileapps/ui/donation_screen/donation_screen.dart';
+import 'package:nutricycle_mobileapps/ui/order_screen/order_screen.dart';
+import 'package:nutricycle_mobileapps/utils/size_font.dart';
+import 'package:nutricycle_mobileapps/utils/theme_colors.dart';
 
 import '../ui/home_screen/views/home_screen.dart';
 
 class NavigationBarWidgets extends StatefulWidget {
+  static const routeName = '/nav_bar_home';
   @override
   _NavigationBarWidgetsState createState() => _NavigationBarWidgetsState();
 }
@@ -27,20 +31,21 @@ class _NavigationBarWidgetsState extends State<NavigationBarWidgets> {
   ];
 
   List<Widget> pages = [
-    HomeScreen(),
-    Placeholder(),
-    Placeholder(),
-    Placeholder(),
+    const HomeScreen(),
+    const OrderScreen(),
+    const DonationScreen(),
+    const Placeholder(),
   ];
 
   @override
   Widget build(BuildContext context) {
-    ScreenUtil.init(context, designSize: Size(393, 852));
+    AllSize allSize = AllSize(context);
+    ScreenUtil.init(context, designSize: const Size(393, 852));
     return Scaffold(
       body: pages[selectedIndex],
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(20.0),
             topRight: Radius.circular(20.0),
           ),

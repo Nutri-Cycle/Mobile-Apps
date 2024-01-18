@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:line_icons/line_icons.dart';
 
-import '../utils/theme_color.dart';
+import '../utils/theme_colors.dart';
 
 class CustomTextFormFieldWidgets extends StatelessWidget {
   final String hintText;

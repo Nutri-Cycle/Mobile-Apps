@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:nutricycle_mobileapps/utils/navigator_screen.dart';
 import 'package:nutricycle_mobileapps/utils/size_font.dart';
-import 'package:nutricycle_mobileapps/utils/theme_color.dart';
+import 'package:nutricycle_mobileapps/utils/theme_colors.dart';
+import 'package:nutricycle_mobileapps/widgets/navigation_bar_widgets.dart';
 
 class FinishPaymentView extends StatefulWidget {
   static const routeName = '/finish_payment';
@@ -45,7 +47,9 @@ class _FinishPaymentViewState extends State<FinishPaymentView> {
                   height: 20,
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    navigateToScreen(context, NavigationBarWidgets.routeName);
+                  },
                   style: ElevatedButton.styleFrom(
                     primary: btnColor,
                     shape: RoundedRectangleBorder(
@@ -67,7 +71,9 @@ class _FinishPaymentViewState extends State<FinishPaymentView> {
                   ),
                 ),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    navigateToScreen(context, NavigationBarWidgets.routeName);
+                  },
                   child: Text(
                     "Go to home page",
                     style: text14Bold1168.copyWith(

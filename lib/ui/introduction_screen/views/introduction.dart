@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nutricycle_mobileapps/ui/login_screen/views/login_screen.dart';
 import 'package:nutricycle_mobileapps/ui/register_screen/views/register_screen.dart';
-import 'package:nutricycle_mobileapps/utils/theme_color.dart';
+import 'package:nutricycle_mobileapps/utils/theme_colors.dart';
 
 class IntroductionScreen extends StatefulWidget {
   static const routeName = '/intro_screen';
