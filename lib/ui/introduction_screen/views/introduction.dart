@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:nutricycle_mobileapps/ui/login_screen/views/login_screen.dart';
 import 'package:nutricycle_mobileapps/ui/register_screen/views/register_screen.dart';
 import 'package:nutricycle_mobileapps/utils/theme_color.dart';
 
@@ -67,6 +68,13 @@ class _IntroductionScreenState extends State<IntroductionScreen> {
                     textAlign: TextAlign.center, style: text14Semibold),
                 SizedBox(width: 8.w),
                 GestureDetector(
+                  onTap: (() {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => LoginScreen(),
+                        ));
+                  }),
                   child: Text('Login',
                       textAlign: TextAlign.center, style: text18Semi393),
                 )
